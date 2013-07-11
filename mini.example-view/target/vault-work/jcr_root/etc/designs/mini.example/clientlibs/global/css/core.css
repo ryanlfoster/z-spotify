@@ -1,0 +1,369 @@
+	/* 
+* copyright (c) 2012, deanlock;
+* Reset and base normalize across browsers;
+* Grid layout and cols | Page widths across browsers;
+* Element normalization for consistancey across browsers;
+* Pre-defined classes for faster development
+* Supported IE6/7/8/9m,FF4+,Chrome 10+,Safari 3+;
+*/
+
+
+/*
+* LAST UPDATE: 04/10/12
+* Modified: removed spacing and added % to mod class
+*/
+
+/* 
+ *
+ * Reset and Base for consistancy across browsers;
+ * Last update: 04/10/12
+ *
+ */
+html {
+    color:#000;
+    background:#FFF;
+}
+img {
+	border:0;
+}
+q:before,q:after {
+	content:'';
+}
+
+abbr,acronym {
+	border:0;
+	font-variant:normal;
+	border-bottom:1px dotted #000;
+	cursor:help;
+}
+legend {
+	color:#000;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,audio,canvas,video,nav {
+	margin:0;
+	padding:0;
+	display:block;
+}
+audio,canvas,video {
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+nav ul,nav ol {
+	list-style:none;
+	list-style-image: none;
+}
+
+/*
+ *
+ * Base Content HTML elements consistancy across browsers
+ * Last updated:5/10/12;
+ * 
+ *
+ */
+
+/* 
+ * global font decared 
+*/
+body {
+	font:13px/1.45 arial,helvetica,sans-serif;
+	margin:0;
+}
+
+h1 {
+	font-size: 2em;	
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;	
+}
+h5 {
+	font-size:1.2em;	
+}
+h6 {
+	font-size:1em;	
+}
+h1,h2,h3,h4,h5,h6 {
+	margin:18px 0;
+}
+p {
+	margin:15px 0;
+}
+hr {
+	border:1px solid #CCCCCC;
+}
+label {
+	vertical-align: middle;
+}
+fieldset {
+	padding:0px 10px 10px 10px;
+	margin:0 0 10px 0;
+	text-align:left;
+	border:1px solid #CCCCCC;
+}
+legend {
+	*margin-left:-7px;
+}
+button,input,select,textarea {
+	vertical-align:middle;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	*margin-bottom: 2px;
+	*margin-top: 2px;
+
+}
+
+/* 
+* Grid layout;
+* Page widths;
+* cols;
+* Page+number = page withs;
+* Col+% = column widths which include gutters and spacing;
+* col+% = col widths which span 100% with no gutters;
+* Last updated:5/10/12;
+* 
+*/
+.page {
+	text-align:left;
+	width:80%;
+	margin:auto;
+}
+/* 
+ *
+ * Rows and Columns - top level - all add up to 100%
+ *
+ */
+ .col10,  .col15,  .col20,  .col25,  .col30,  .col33,  .col35,  .col40,
+ .col45,  .col50,  .col55,  .col60,  .col65,  .col66,  .col70,  .col75,  .col80,
+ .col85,  .col90 { 
+	float:left;
+	margin:0;
+}
+
+ .col10 {
+    width:10%;
+}
+ .col15 {
+    width:15%;
+}
+ .col20 {
+    width:20%;
+}
+ .col25 {
+	width:25%;
+}
+ .col30 {
+	width:30%;
+}
+ .col33 {
+	width:33.38%;
+}
+ .col35 {
+	width:35%;
+}
+ .col40 {
+	width:40%;
+}
+ .col45 {
+    width:45%;
+}
+ .col50 {
+	width:50%
+}
+ .col55 {
+    width:55%;
+}
+ .col60 {
+	width:60%;
+}
+ .col65 {
+	width:65%;
+}
+ .col66 {
+	width:66.666%;
+}
+ .col70 {
+	width:70%;
+}
+ .col75 {
+	width:75%;
+}
+ .col80 {
+	width:80%;
+}
+ .col85 {
+        width:85%;
+}
+ .col90 {
+        width:90%;
+}
+
+.last {
+	float:right;
+	position:relative;
+	left:-3px;
+	margin-right:-3px;
+}
+.content:after,.row:after,#hd:after,#bd:after,#ft:after,.mod:after,.hd:after,.bd:after,.ft:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.content,.row,#hd,#bd,#ft,.mod,.hd,.bd,.ft {
+	zoom:1;
+	position: relative;
+}
+/*
+ * All the below classes are standard library defaults
+ * Last updated: 5/10/12
+ *
+*/
+/* comman global classes */
+
+.last .content {
+	margin-right:0;
+}
+
+/* reset element */
+.reset {
+	padding:0;
+	margin:0;
+	border:none;
+	background:none;
+	list-style:none;
+	list-style-image: none;
+    float:none;
+    clear:both;
+}
+/* module class to self clear elements */
+.mod {
+	margin:10px 0;
+}
+/* Helper tools */
+.border {
+	border:1px solid #CCCCCC;
+}
+.hide {
+	display:none;
+}
+.show {
+	display:block;
+}
+/*
+*	Support for mobile iPhone/Andriod
+*	makes page width 95%/cols 100%, nexted columns default width
+*	last update: 05/10/12;
+*/
+@media screen and (max-device-width: 480px) {
+   .page {
+    	width:95%;
+    }
+	.col10,  .col15,  .col20,  .col25,  .col30,  .col33,  .col35,  .col40,
+	.col45,  .col50,  .col55,  .col60,  .col65,  .col66,  .col70,  .col75,  .col80,
+	.col85,  .col90,.last { 
+		float:none;
+		width:auto;
+		margin:0 0 10px 0;
+	}
+	.last {
+		position:relative;
+		left:0;
+		margin-right:0;
+	}
+	.content .col10,.content .col15,.content .col20,.content .col25,.content .col30,.content .col33, 
+	.content .col35,.content .col40,.content .col45,.content .col50,.content .col55,.content .col60,  
+	.content .col65,.content .col66,.content .col70,.content .col75,.content .col80,.content .col85,
+	.content .col90 { 
+		float:left;
+		margin:0;
+	}
+	 .content .col10 {
+	    width:10%;
+	}
+	 .content .col15 {
+	    width:15%;
+	}
+	 .content .col20 {
+	    width:20%;
+	}
+	 .content .col25 {
+		width:25%;
+	}
+	 .content .col30 {
+		width:30%;
+	}
+	 .content .col33 {
+		width:33.38%;
+	}
+	 .content .col35 {
+		width:35%;
+	}
+	 .content .col40 {
+		width:40%;
+	}
+	 .content .col45 {
+	    width:45%;
+	}
+	 .content .col50 {
+		width:50%
+	}
+	 .content .col55 {
+	    width:55%;
+	}
+	 .content .col60 {
+		width:60%;
+	}
+	 .content .col65 {
+		width:65%;
+	}
+	 .content .col66 {
+		width:66.666%;
+	}
+	 .content .col70 {
+		width:70%;
+	}
+	 .content .col75 {
+		width:75%;
+	}
+	 .content .col80 {
+		width:80%;
+	}
+	 .content .col85 {
+	        width:85%;
+	}
+	 .content .col90 {
+	        width:90%;
+	}
+	.content .last {
+		float:right;
+		position:relative;
+		left:-3px;
+		margin-right:-3px;
+	}
+	.content {
+		margin-right:0 !important;
+	}
+	ul,ol {
+		padding-left:30px;
+	}
+	dd {
+		margin-left:30px;
+	}
+	p,h1,h2,h3,h4,h5,h6 {
+		margin:10px 0;
+	}
+	label {
+		display: block;
+	}
+	blockquote {
+		margin-left:30px;
+	}
+}

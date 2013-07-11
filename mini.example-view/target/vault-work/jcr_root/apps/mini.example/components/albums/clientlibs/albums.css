@@ -1,0 +1,16 @@
+.playlist {
+   	border: 2px solid #4DA400;
+    border-radius: 25px 25px 25px 25px;
+    margin: 30px 48px;
+    padding: 0 12px;
+    width: 200px;
+    background-color: #FFFFFF;
+}
+.album-list {
+	list-style: none outside none;
+    padding: 0;
+    text-align: center;
+}
+.album-list li {
+	padding:3px 0;
+}

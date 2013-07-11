@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspaceFilter version="1.0">
+    <filter root="/apps/mini.example">
+        <exclude pattern="/apps/mini.example/install.*"/>
+        <exclude pattern="/apps/mini.example/runmodes.*"/>
+    </filter>
+    <filter root="/etc/clientlibs/mini.example"/>
+	<filter root="/etc/designs/mini.example">
+        <exclude pattern="/etc/designs/mini.example/jcr:content.*"/>
+    </filter>
+</workspaceFilter>

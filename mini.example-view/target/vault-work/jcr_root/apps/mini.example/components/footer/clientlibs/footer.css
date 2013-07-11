@@ -1,0 +1,11 @@
+body {
+	height: 100%;
+}
+.logo-ft {
+	margin:5px;
+	float:right;
+}
+#ft {
+	height:50px;
+	background-color: rgba(0, 0, 0, 0.75);
+}

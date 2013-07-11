@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          helpPath="en/cq/current/wcm/default_components.html#Text"
+          title="Properties"
+          width="900"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <titletab
+                    jcr:primaryType="cq:Widget"
+                    title="Title"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+
+                        <header
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Header"
+                            defaultValue="Hidden text"
+                            name="./header"
+                            allowBlank="false"
+                            xtype="textarea"/>
+
+
+                        <firstnode
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="First"
+                            defaultValue="Hidden text"
+                            name="./firstnode"
+                            allowBlank="false"
+                            xtype="textarea"/>
+
+                        <second
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="second"
+                            defaultValue="visible text"
+                            name="./secondnode"
+                            allowBlank="false"
+                            xtype="textarea"/>
+
+                        <third
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Third"
+                            defaultValue="visible text"
+                            name="./thirdnode"
+                            allowBlank="false"
+                            xtype="textarea"/>
+                    </items>
+                </titletab>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

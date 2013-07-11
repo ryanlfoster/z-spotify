@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspaceFilter version="1.0">
+    <filter root="/content/mini.example"/>
+    <filter root="/content/dam/mini.example">
+        <!-- exclude pattern=".*/renditions.*"/ -->
+    </filter>
+    <filter root="/etc/designs/mini.example/jcr:content">
+        <include pattern="/etc/designs/mini.example/jcr:content(/.*)+"/>
+    </filter>
+</workspaceFilter>

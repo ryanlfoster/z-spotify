@@ -1,0 +1,30 @@
+html {
+	background-color: #EBEAE8;
+	height:100%;
+}
+body {
+	font-weight:bold;
+
+}
+.page {
+	width:100%;
+}
+#bd {
+	margin: 0 auto;
+    width: 80%;
+}
+.col25 {
+	text-align: center;
+}
+h1 {
+	text-align: center;	
+	font-size: 300%;
+	margin-top:109px;
+}
+.main {
+	margin-top: 10px;
+}
+.intro-image {
+	text-align: center;
+	margin-top:20px;
+}

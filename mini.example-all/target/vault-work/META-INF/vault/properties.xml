@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>mini - mini.example-all</comment>
+<entry key="createdBy">SG0204766</entry>
+<entry key="name">mini.example-all</entry>
+<entry key="created">2013-07-05T09:37:37.863+0100</entry>
+<entry key="groupId">mini</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">mini</entry>
+<entry key="description">Builds a CQ package containing all components of the 'mini' project. Useful for making formal
+        releases to QA and production environments for example.</entry>
+<entry key="artifactId">mini.example-all</entry>
+<entry key="path">/etc/packages/mini/mini.example-all.zip</entry>
+</properties>
