@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1373013437908
+Bnd-LastModified: 1374842973480
 Build-Jdk: 1.7.0_17
 Built-By: SG0204766
 Bundle-Activator: mini.services.osgi.Activator
