@@ -6,7 +6,7 @@
 <cq:includeClientLib css="mini.example.components.search" />
 <h1><fmt:message key="SEARCH" /></h1>
 <span class="albums-tab"><fmt:message key="TAB-ALBUMS" /></span>
-<span class="tracks-tab"><fmt:message key="TAB-TRACKS" /></span>
+<span class="tracks-tab active"><fmt:message key="TAB-TRACKS" /></span>
 <form>
     <input type="text" class="search-albums hide" value="<fmt:message key="SEARCH-ALBUMS" />">
 </form>

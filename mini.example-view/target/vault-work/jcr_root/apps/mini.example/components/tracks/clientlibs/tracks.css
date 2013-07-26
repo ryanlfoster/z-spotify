@@ -1,8 +1,7 @@
 .playlist {
-   	border: 2px solid #4DA400;
+   	border: 2px solid #83a91c;
     border-radius: 25px 25px 25px 25px;
     margin: 30px 48px;
-    padding: 0 12px;
     width: 200px;
     background-color: #FFFFFF;
 }
@@ -13,4 +12,7 @@
 }
 .track-list li {
 	padding:3px 0;
+}
+.playlist a {
+    color:rgba(0, 0, 0, 0.75)
 }
